@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* main {
+    @apply container mx-auto px-4 py-2
+}
+
+section {
+    @apply flex flex-col gap-4
+}
+
+section > div {
+    @apply flex flex-col gap-3
+} */
+
+/* TEXT INPUT */
+.input {
+    @apply py-2 px-3 outline outline-1 outline-slate-400 rounded-md w-full
+}
+
+/* BUTTON */
+.success {
+    @apply px-4 py-2 text-nowrap border rounded-md bg-green-500 hover:bg-green-600 text-white
+}
+
+.primary {
+    @apply px-4 py-2 text-nowrap border rounded-md bg-blue-500 hover:bg-blue-600 text-white
+}
+
+.error {
+    @apply px-4 py-2 border rounded-md bg-red-500 hover:bg-red-600 text-white
+}
