@@ -108,7 +108,7 @@ function clearErrors() {
 
 const days = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
 const times = ['Morning', 'Afternoon', 'Evening'];
-const dateToday = new Date().toISOString().split('T')[0]
+const dateToday = new Date().toLocaleDateString('en-CA').split('T')[0]
 function toggleSelection(field, value) {
     const index = formObject[field].indexOf(value)
     if (index > -1) {

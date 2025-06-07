@@ -12,6 +12,7 @@ class ScheduleService extends Model
         'start_date',
         'day',
         'time',
+        'note'
     ];
 
     protected $casts = [

@@ -15,6 +15,7 @@ class ScheduleServiceController extends Controller
             'start_date' => 'required|date|after_or_equal:today',
             'day' => 'required|array|min:1',
             'time' => 'required|array|min:1',
+            'note' => 'string'
         ],[
             'contact.regex' => 'The contact number must start with 09 and be 11 digits long.',
         ]);
@@ -25,7 +26,8 @@ class ScheduleServiceController extends Controller
                 'frequency' => $validatedData['frequency'],
                 'start_date' => $validatedData['start_date'],
                 'day' => $validatedData['day'],
-                'time' => $validatedData['time']
+                'time' => $validatedData['time'],
+                'note' => $validatedData['note']
             ]);
 
             return response()->json([
